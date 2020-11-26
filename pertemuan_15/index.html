@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modules: Export and Import</title>
+    <script src="index.js"></script>
+</head>
+<body>
+    <script type="module">
+        import { hello } from './index.js'
+        hello('Putri') //accessing the function in the module index.js
+    </script>
+</body>
+</html>
+
+//Import
+    import * as helper from './index.js'
+    helper.hello('Putri')
